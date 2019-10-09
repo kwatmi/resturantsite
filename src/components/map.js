@@ -1,6 +1,8 @@
 import React from 'react';
 import  {Map, Marker, GoogleApiWrapper} from 'google-maps-react';
 
+const google = window.google;
+
 export class Mapsec extends React.Component{
 
     render(){
@@ -35,4 +37,4 @@ return(
 }
 }
 
-export default Mapsec;
+export default GoogleApiWrapper({apiKey: ('AIzaSyALirqbYv3jf8b79LL83ng8932FdKX163U')}) (Mapsec);
